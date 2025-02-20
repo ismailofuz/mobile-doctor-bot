@@ -1,7 +1,8 @@
-import { Context } from 'grammy';
 import db from '../database';
+import { languageKeyboard } from '../handlers/keyboard-handlers';
+import { MyContext } from '../core/bot';
 
-const startController = async (ctx: Context) => {
+const startController = async (ctx: MyContext) => {
     const chat_id = ctx.chatId;
 
     await db('users')
@@ -13,7 +14,10 @@ const startController = async (ctx: Context) => {
         .onConflict('chat_id')
         .merge();
 
-    await ctx.reply('Botga xush kelibsiz, menga instagram havola linkini yuboring', { parse_mode: 'HTML' });
+    ctx.session.step = 'choose_language';
+
+    const message = await ctx.reply('Botga xush kelibsiz', { parse_mode: 'HTML', reply_markup: languageKeyboard });
+    ctx.session.message_id = message?.message_id;
 };
 
 export { startController };

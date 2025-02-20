@@ -1,1 +1,1 @@
-import './start'
+import './start';

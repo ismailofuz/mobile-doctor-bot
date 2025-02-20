@@ -1,7 +1,7 @@
 module.exports = {
     apps: [
         {
-            name: '@video-downloader-bot',
+            name: '@doctor-mobile-bot',
             script: 'yarn start:dev',
         },
     ],
