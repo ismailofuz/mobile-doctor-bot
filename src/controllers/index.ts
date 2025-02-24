@@ -34,3 +34,13 @@ export * from './rinit/rinit-kasallikni-davolash';
 export * from './rinit/rinit-kelib-chiqish-sabablari';
 export * from './rinit/rinit-xavfli-jihatlari';
 
+export * from './qizamiq/qizamiq';
+export * from './qizamiq/qizamiq-nima';
+export * from './qizamiq/qizamiq-kasallik-sabablari';
+export * from './qizamiq/qizamiq-kasallik-belgilari';
+export * from './qizamiq/qizamiq-kasallikni-davolash';
+export * from './qizamiq/qizamiq-profilaktika';
+export * from './qizamiq/qizamiq-xavfli-jihatlari';
+export * from './qizamiq/qizamiq-uchun-parhez';
+
+
