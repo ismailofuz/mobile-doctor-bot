@@ -52,7 +52,10 @@ export type Messages =
 
     | 'allergik_rinit'
     | 'bronxal_astma'
-    | 'atopik_dermatit';
+    | 'atopik_dermatit'
+
+    | 'tonzilit'
+
 
 export const messages: Record<Languages, Record<Messages, string>> = {
     uz: {
@@ -97,6 +100,8 @@ export const messages: Record<Languages, Record<Messages, string>> = {
         bronxal_astma: 'Bronxal astma✅',
         atopik_dermatit: 'Atopik dermatit✅',
 
+        // nafas yo'llari kasalliklari
+        tonzilit: 'Tonzilit✅',
 
         diagnostika: 'Diagnostika✅',
         kasallikni_davolash: 'Kasallikni davolash✅',
@@ -157,6 +162,8 @@ export const messages: Record<Languages, Record<Messages, string>> = {
         bronxal_astma: 'Bronxal astma✅',
         atopik_dermatit: 'Atopik dermatit✅',
 
+        // nafas yo'llari kasalliklari
+        tonzilit: 'Tonzilit✅',
 
         diagnostika: 'Diagnostika✅',
         kasallikni_davolash: 'Kasallikni davolash✅',
@@ -214,6 +221,9 @@ export const messages: Record<Languages, Record<Messages, string>> = {
         allergik_rinit: 'Allergik rinit✅',
         bronxal_astma: 'Bronxal astma✅',
         atopik_dermatit: 'Atopik dermatit✅',
+
+        // nafas yo'llari kasalliklari
+        tonzilit: 'Tonzilit✅',
 
         diagnostika: 'Diagnostika✅',
         kasallikni_davolash: 'Kasallikni davolash✅',
